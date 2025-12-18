@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Figure">
+      <UniqueIdentifier>{3cc88755-9e0d-4faf-a122-950155f516a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Triangle">
+      <UniqueIdentifier>{62dcc781-a8e4-4dd1-aedd-47e4cd3320e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quadrilateral">
+      <UniqueIdentifier>{550644a1-3a44-4219-b80b-194f1101f39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FigureException">
+      <UniqueIdentifier>{f983018a-c093-4c0d-bbcc-7e0e60a61682}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
+      <Filter>Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadrilateral.cpp">
+      <Filter>Quadrilateral</Filter>
+    </ClCompile>
+    <ClCompile Include="FigureException.cpp">
+      <Filter>FigureException</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Figure.h">
+      <Filter>Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadrilateral.h">
+      <Filter>Quadrilateral</Filter>
+    </ClInclude>
+    <ClInclude Include="FigureException.h">
+      <Filter>FigureException</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
