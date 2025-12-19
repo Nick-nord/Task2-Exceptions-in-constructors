@@ -12,34 +12,31 @@ Triangle::Triangle(int a, int b, int c, int A, int B, int C) // : sideA, sideB, 
 	this->cornerA = A;
 	this->cornerB = B;
 	this->cornerC = C;
-	try {
-		if ((cornerA + cornerB + cornerC) != 180)
-		{
-			throw FigureException("Error creating the shape. Reason: the sum of the angles is not equal to 180");
-		}
-	}
-	catch (const FigureException& ex)
+
+	if ((cornerA + cornerB + cornerC) != 180)
 	{
-		std::cout << ex.getMessage() << std::endl;
-		std::cout << std::endl;
+		throw FigureException ("Error creating the shape. Reason: the sum of the angles is not equal to 180");
 	}
 	
-    if (cornerC == 90) {
+	if (cornerC == 90) 
+	{
 		NameTriangle = "Right-angled triangle";
 	}
 	else if ((sideA == sideB == sideC) && (cornerA == 60) && (cornerB == 60) && (cornerC == 60))
-	{
-		NameTriangle = "Equilateral triangle";
-	}
-	else if ((sideA == sideC) && (cornerA == cornerC))
-	{
-		NameTriangle = "Isosceles triangle";
-	}
-	else
-	{
-		NameTriangle = "Triangle";
-	}
+	     {
+		      NameTriangle = "Equilateral triangle";
+	     }
+	     else if ((sideA == sideC) && (cornerA == cornerC))
+	         {
+		          NameTriangle = "Isosceles triangle";
+	         }
+	         else
+	            {
+		            NameTriangle = "Triangle";
+	             }
 }
+
+Triangle::~Triangle() {};
 
 void Triangle::print_info()
 {

@@ -13,17 +13,13 @@ Quadrilateral::Quadrilateral(int a, int b, int c, int d, int A, int B, int C, in
 	this->cornerB = B;
 	this->cornerC = C;
 	this->cornerD = D;
-	try {
-		if ((cornerA + cornerB + cornerC)+ cornerD != 360)
-		{
-			throw FigureException("Error creating the shape. Reason: the sum of the angles is not equal to 360");
-		}
-	}
-	catch (const FigureException& ex)
+	
+	if ((cornerA + cornerB + cornerC)+ cornerD != 360)
 	{
-		std::cout << ex.getMessage() << std::endl;
-		std::cout << std::endl;
+		throw FigureException("Error creating the shape. Reason: the sum of the angles is not equal to 360");
 	}
+
+	
 	if ((cornerA == 90) && (cornerB == 90) && (cornerC == 90) && (cornerD == 90))
 	{
 		if ((sideA == sideB) && (sideA == sideC) && (sideA == sideD))
