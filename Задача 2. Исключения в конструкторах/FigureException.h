@@ -1,7 +1,7 @@
 #ifndef FIGUREEXCEPTION_H 
 #define FIGUREEXCEPTION_H 
 
-class FigureException
+class FigureException : public std::exception
 {
 public:
 	FigureException(std::string message);

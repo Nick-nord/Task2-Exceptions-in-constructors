@@ -6,22 +6,6 @@
 
 
 int main() {
-	/*
-	try
-	{
-		Person tom{ "Tom", 38 };      // Корректные данные
-		tom.print();
-
-		Person bob{ "Bob", 1500 };    // Некорректные данные
-		bob.print();
-	}
-	catch (const AgeException& ex)
-	{
-		std::cout << ex.getMessage() << std::endl;
-	}
-
-*/
-
 	Figure figure;
 	Figure* p;
 	p = &figure;
@@ -75,12 +59,6 @@ int main() {
 
 	p = &quadrilateral5;
 	p->print_info();
-	
-	/* }
-	catch (const FigureException& ex)
-	{
-		std::cout << ex.getMessage() << std::endl;
-	}*/
 
 	return EXIT_SUCCESS;
 }

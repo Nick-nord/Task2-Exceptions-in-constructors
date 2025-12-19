@@ -23,6 +23,10 @@ Triangle::Triangle(int a, int b, int c, int A, int B, int C) // : sideA, sideB, 
 		std::cout << ex.getMessage() << std::endl;
 		std::cout << std::endl;
 	}
+	catch (const std::exception&)   // обработка остальных исключений
+	{
+		std::cout << "Something wrong" << std::endl;
+	}
 	
     if (cornerC == 90) {
 		NameTriangle = "Right-angled triangle";
