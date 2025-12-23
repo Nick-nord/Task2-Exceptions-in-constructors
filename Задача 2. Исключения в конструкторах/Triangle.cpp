@@ -17,6 +17,10 @@ Triangle::Triangle(int a, int b, int c, int A, int B, int C) // : sideA, sideB, 
 	{
 		throw FigureException ("Error creating the shape. Reason: the sum of the angles is not equal to 180");
 	}
+	catch (const std::exception&)   // обработка остальных исключений
+	{
+		std::cout << "Something wrong" << std::endl;
+	}
 	
 	if (cornerC == 90) 
 	{
